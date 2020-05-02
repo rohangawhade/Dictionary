@@ -34,7 +34,7 @@ def action():
         s = get_close_matches(word, word_list.keys())[0]
         scroll.delete('1.0', 'end')
         scroll.insert(END, 'Meaning of ' + s + ' :' + '\n')
-        scroll.insert(END, '-------------------------' + '\n')
+        scroll.insert(END, '---------------------------' + '\n')
         list_mean = list(mean)
         n = 1
         for i in range(len(list_mean)):
